@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adidas Retro</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <style>
+    :root {
+      --bulma-primary-h: 39deg !important;
+      --bulma-primary-s: 88% !important;
+      --bulma-primary-l: 58% !important;
+    }
+
+    .card-adidas {
+      max-width: 320px !important;
+    }
+
+    .gap {
+      gap: 1rem;
+    }
+  </style>
+</head>
+
+<body data-theme="light">
+  <header>
+    <nav class="navbar is-dark">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <strong>ADIDAS RETRO</strong>
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="menu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#">Inicio</a>
+          <a class="navbar-item" href="#productos">Productos</a>
+          <a class="navbar-item" href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero is-primary is-medium">
+      <div class="hero-body">
+        <p class="title">Adidas Retro</p>
+        <p class="subtitle">Prendas nuevas con estilo de los 80s y 90s</p>
+      </div>
+    </section>
+
+    <section class="container is-max-desktop mt-4 p-4">
+      <p>
+        Adidas trae de vuelta sus diseños clásicos con un toque moderno. En esta página puedes ver algunas de
+        las prendas de la nueva colección retro: tenis, sudaderas y camisetas con los colores y las tres
+        rayas que hicieron famosa a la marca.
+      </p>
+    </section>
+
+    <section class="container is-max-desktop mt-4 is-flex is-flex-wrap-wrap is-justify-content-center gap" id="productos">
+      <div class="card card-adidas">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="https://images.unsplash.com/photo-1520256862855-398228c41684?w=600" alt="Tenis Prophere" />
+          </figure>
+        </div>
+        <div class="card-content">
+          <p class="title is-4">Prophere</p>
+          <p class="subtitle is-6">Tenis</p>
+          <div class="content">
+            Tenis azules con detalles en coral, inspirados en los diseños de los 90s.
+            <br />
+            <strong>L 3,450</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-adidas">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600" alt="Sudadera gris" />
+          </figure>
+        </div>
+        <div class="card-content">
+          <p class="title is-4">Hoodie Trefoil</p>
+          <p class="subtitle is-6">Sudadera</p>
+          <div class="content">
+            Sudadera gris con capucha, cómoda y con el estilo clásico de la marca.
+            <br />
+            <strong>L 2,300</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-adidas">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600" alt="Camiseta Original" />
+          </figure>
+        </div>
+        <div class="card-content">
+          <p class="title is-4">Camiseta Original</p>
+          <p class="subtitle is-6">Camiseta</p>
+          <div class="content">
+            Camiseta blanca con estampado azul de estilo vintage.
+            <br />
+            <strong>L 1,200</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container is-max-desktop mt-6 p-4" id="contacto">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <div class="field">
+            <label class="label">Contáctanos</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Nombre Completo">
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <input class="input" type="email" placeholder="Correo">
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <textarea class="textarea" placeholder="Mensaje"></textarea>
+            </div>
+          </div>
+
+          <div class="field is-grouped is-grouped-centered">
+            <p class="control">
+              <button class="button is-primary">Enviar</button>
+            </p>
+            <p class="control">
+              <a class="button is-light">Cancelar</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <figure class="image">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600" alt="Conjunto deportivo amarillo" />
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p class="title is-5 mb-2">Diego Romero</p>
+      <p class="mb-1">Portales de Desarrollo Web II</p>
+      <p class="is-size-7">© 2026 · Adidas Retro</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+
+    });
+  </script>
+</body>
+
+</html>
